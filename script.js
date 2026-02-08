@@ -1,26 +1,25 @@
-// THEME TOGGLE (FIXED)
+// THEME TOGGLE (persisted)
 const toggle = document.getElementById("theme-toggle");
-const icon = toggle.querySelector("i");
+const savedTheme = localStorage.getItem("theme");
 
-toggle.addEventListener("click", () => {
+if (savedTheme === "light") {
+  document.body.classList.add("light");
+  toggle.textContent = "🌙";
+}
+
+toggle.onclick = () => {
   document.body.classList.toggle("light");
-
-  if (document.body.classList.contains("light")) {
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-  } else {
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-  }
-});
+  const isLight = document.body.classList.contains("light");
+  toggle.textContent = isLight ? "🌙" : "☀️";
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+};
 
 // SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
   reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
       el.classList.add("active");
     }
   });
