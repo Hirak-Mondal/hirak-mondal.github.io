@@ -1,15 +1,17 @@
-// THEME TOGGLE (persisted)
+// THEME TOGGLE (dark is default)
 const toggle = document.getElementById("theme-toggle");
 const savedTheme = localStorage.getItem("theme");
 
+// Default = DARK
 if (savedTheme === "light") {
   document.body.classList.add("light");
   toggle.textContent = "🌙";
+} else {
+  toggle.textContent = "☀️";
 }
 
 toggle.onclick = () => {
-  document.body.classList.toggle("light");
-  const isLight = document.body.classList.contains("light");
+  const isLight = document.body.classList.toggle("light");
   toggle.textContent = isLight ? "🌙" : "☀️";
   localStorage.setItem("theme", isLight ? "light" : "dark");
 };
