@@ -1,17 +1,32 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+  transition: 0.3s;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
@@ -22,17 +37,26 @@ body {
 }
 
 .hero p {
-  margin-top: 0.5rem;
-  color: #94a3b8;
+  color: var(--muted);
 }
 
 .socials a {
-  color: #38bdf8;
+  color: var(--accent);
   margin: 0 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
-/* SECTIONS */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 section {
   max-width: 900px;
   margin: auto;
@@ -40,45 +64,52 @@ section {
 }
 
 h2 {
+  color: var(--accent);
   margin-bottom: 1rem;
-  color: #38bdf8;
-}
-
-/* SKILLS */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .skills span {
-  background: #1e293b;
+  display: inline-block;
+  background: var(--card);
   padding: 6px 12px;
+  margin: 6px;
   border-radius: 6px;
-  font-size: 0.9rem;
 }
 
-/* CARDS */
 .card {
-  background: #1e293b;
+  background: var(--card);
   padding: 1.2rem;
   border-radius: 10px;
   margin-bottom: 1.2rem;
 }
 
-.card span {
-  color: #94a3b8;
-  font-size: 0.9rem;
-}
-
-.card ul {
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 1.5rem;
-  color: #94a3b8;
+  color: var(--muted);
+}
+
+/* TOGGLE */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--card);
+  color: var(--accent);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
