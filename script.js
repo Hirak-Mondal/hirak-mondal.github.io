@@ -1,18 +1,18 @@
-// THEME TOGGLE
+// THEME TOGGLE (FIXED)
 const toggle = document.getElementById("theme-toggle");
+const icon = toggle.querySelector("i");
 
-toggle.onclick = () => {
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("light");
-  toggle.textContent = document.body.classList.contains("light")
-    ? "🌙 Dark Mode"
-    : "☀️ Light Mode";
-};
 
-// CONTACT SCROLL
-function scrollToContact() {
-  document.getElementById("contact")
-    .scrollIntoView({ behavior: "smooth" });
-}
+  if (document.body.classList.contains("light")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
 
 // SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
