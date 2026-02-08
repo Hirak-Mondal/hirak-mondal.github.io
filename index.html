@@ -2,228 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hirak Mondal | Backend Engineer</title>
 
-  <!-- IMPORTANT: relative path -->
   <link rel="stylesheet" href="style.css" />
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
 </head>
+
 <body>
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
 
-<!-- FLOATING THEME TOGGLE -->
-<button id="theme-toggle" title="Toggle theme">
-  <i class="fas fa-moon"></i>
-</button>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Hirak Mondal</h1>
+    <p class="subtitle">
+      Backend Software Engineer · Distributed Systems · Payments
+    </p>
 
-<!-- HERO -->
-<header class="hero reveal">
-  <h1>Hirak Mondal</h1>
-  <p>Backend Software Engineer • Distributed Systems • Payments</p>
+    <div class="hero-links">
+      <a href="mailto:hirakmondal2000@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/hirak-mondal-2000/" target="_blank">LinkedIn</a>
+      <a href="https://leetcode.com/u/hirakmondal2000/" target="_blank">LeetCode</a>
+    </div>
 
-  <div class="socials">
-    <a href="https://linkedin.com/in/hirak-mondal-2000" target="_blank">
-      <i class="fab fa-linkedin"></i>
+    <a class="resume-btn" href="resume.pdf" target="_blank">
+      Download Resume
     </a>
-    <a href="https://leetcode.com/u/hirakmondal2000" target="_blank">
-      <i class="fas fa-code"></i>
-    </a>
-    <a href="mailto:hirakmondal2000@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
+  </header>
 
-  <!-- RESUME BUTTON -->
-  <a class="resume-btn" href="resume.pdf" download>
-    Download Resume
-  </a>
-</header>
+  <!-- SUMMARY -->
+  <section class="section reveal">
+    <h2>Professional Summary</h2>
+    <p>
+      Backend Software Engineer with 2+ years of experience building
+      <strong>secure payment systems</strong> and
+      <strong>microservices-based platforms</strong>.
+      Hands-on with <strong>OLW/CLW wallet flows</strong>,
+      <strong>encryption</strong>,
+      <strong>distributed logging</strong>,
+      and <strong>observability</strong> using
+      Java, Python, Kafka, AWS, and PHP.
+    </p>
+  </section>
 
-<section class="reveal">
-  <h2>About Me</h2>
-  <p>
-    Backend Software Engineer with 2+ years of experience building secure
-    payment systems and microservices. Strong background in wallet flows,
-    encryption, distributed logging, observability, and cost optimization.
-  </p>
-</section>
+  <!-- EXPERIENCE -->
+  <section class="section reveal">
+    <h2>Experience</h2>
 
-<section class="reveal">
-  <h2>Technical Skills</h2>
-
-  <div class="card skills-grid">
-
-    <div class="skill-group">
-      <h3>Languages</h3>
-      <div class="skill-badges">
-        <span class="skill-badge primary">Java</span>
-        <span class="skill-badge primary">Python</span>
-        <span class="skill-badge">PHP</span>
-        <span class="skill-badge">C++</span>
-        <span class="skill-badge">SQL</span>
-      </div>
+    <div class="card">
+      <h3>Software Engineer — PayU Payments Pvt. Ltd.</h3>
+      <span class="meta">Bengaluru · Apr 2025 – Present</span>
+      <ul>
+        <li>
+          Designed and delivered <strong>Open Loop</strong> and
+          <strong>Closed Loop Wallet</strong> payment flows across
+          <strong>3+ platforms</strong> in a
+          <strong>microservices architecture</strong>,
+          collaborating with mobile, web, and banking partners.
+        </li>
+        <li>
+          Built a reusable <strong>AES–RSA hybrid encryption framework</strong>
+          securing sensitive data <strong>in transit and at rest</strong>
+          across <strong>10+ internal services</strong>.
+        </li>
+        <li>
+          Automated secure bank data ingestion pipelines using
+          <strong>Python</strong>, processing encrypted Excel/CSV and ZIP files,
+          improving processing efficiency by <strong>60%</strong>.
+        </li>
+        <li>
+          Developed <strong>Grafana observability dashboards</strong> for
+          <strong>10+ microservices</strong>,
+          reducing incident detection time by <strong>40%</strong>.
+        </li>
+      </ul>
     </div>
 
-    <div class="skill-group">
-      <h3>Backend & Messaging</h3>
-      <div class="skill-badges">
-        <span class="skill-badge primary">Kafka</span>
-        <span class="skill-badge primary">Redis</span>
-      </div>
+    <div class="card">
+      <h3>Associate Software Engineer — PayU Payments Pvt. Ltd.</h3>
+      <span class="meta">Jul 2023 – Apr 2025</span>
+      <ul>
+        <li>
+          Optimized an org-wide distributed logging pipeline
+          (<strong>Fluent Bit → Kafka → FluentD → S3 → OpenSearch</strong>),
+          achieving <strong>80–90%</strong> infrastructure cost reduction.
+        </li>
+        <li>
+          Improved archived log indexing and search workflows from
+          <strong>Amazon S3</strong>, boosting query efficiency by
+          <strong>60–70%</strong>.
+        </li>
+        <li>
+          Migrated cron-based workflows to <strong>Dolphin Scheduler</strong>,
+          extending <strong>RBAC</strong> with a custom Maintainer role.
+        </li>
+        <li>
+          Increased <strong>SonarQube coverage to 90%+</strong>,
+          achieving an <strong>A+ security rating</strong>.
+        </li>
+      </ul>
     </div>
 
-    <div class="skill-group">
-      <h3>Cloud & Infrastructure</h3>
-      <div class="skill-badges">
-        <span class="skill-badge primary">AWS S3</span>
-        <span class="skill-badge primary">EC2</span>
-        <span class="skill-badge">EventBridge</span>
-        <span class="skill-badge">Localstack</span>
+    <div class="card">
+      <h3>Software Engineer Intern — PayU Payments Pvt. Ltd.</h3>
+      <span class="meta">Jan 2023 – Jun 2023</span>
+      <ul>
+        <li>
+          Migrated centralized logging from <strong>Logstash</strong> to
+          <strong>Fluent Bit → FluentD → Kafka</strong>,
+          improving ingestion performance and reducing resource usage.
+        </li>
+        <li>
+          Helped build a scalable, cost-efficient logging platform
+          supporting multiple production services.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section reveal">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div>
+        <h4>Languages</h4>
+        <p>Java, Python, PHP, C++, SQL</p>
+      </div>
+      <div>
+        <h4>Backend & Messaging</h4>
+        <p>Kafka, Redis</p>
+      </div>
+      <div>
+        <h4>Cloud & Infrastructure</h4>
+        <p>AWS (S3, EC2, EventBridge), Localstack</p>
+      </div>
+      <div>
+        <h4>Observability</h4>
+        <p>Fluent Bit, FluentD, Logstash, OpenSearch, Grafana</p>
+      </div>
+      <div>
+        <h4>Testing & Quality</h4>
+        <p>JUnit, Mockito, SonarQube</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <p>Git, Postman, IntelliJ IDEA, VS Code</p>
       </div>
     </div>
+  </section>
 
-    <div class="skill-group">
-      <h3>Observability</h3>
-      <div class="skill-badges">
-        <span class="skill-badge primary">Fluent Bit</span>
-        <span class="skill-badge">FluentD</span>
-        <span class="skill-badge">Logstash</span>
-        <span class="skill-badge primary">OpenSearch</span>
-        <span class="skill-badge primary">Grafana</span>
-      </div>
+  <!-- EDUCATION -->
+  <section class="section reveal">
+    <h2>Education</h2>
+    <div class="card">
+      <strong>Jadavpur University</strong> — B.E. in Electronics & Instrumentation  
+      <span class="meta">2019 – 2023 · CGPA 8+</span>
     </div>
+  </section>
 
-    <div class="skill-group">
-      <h3>Testing & Quality</h3>
-      <div class="skill-badges">
-        <span class="skill-badge">JUnit</span>
-        <span class="skill-badge">Mockito</span>
-        <span class="skill-badge primary">SonarQube</span>
-      </div>
-    </div>
+  <!-- ACHIEVEMENTS -->
+  <section class="section reveal">
+    <h2>Achievements</h2>
+    <p>
+      Received the <strong>ThankU Award</strong> from the CEO for optimizing
+      critical logging pipelines, achieving <strong>80–90%</strong> cost reduction.
+      <a href="https://drive.google.com/file/d/1eY6ZYaaWiWhE-c5efUglSNZBHEjruRgi/view" target="_blank">
+        [Certificate]
+      </a>
+    </p>
+  </section>
 
-    <div class="skill-group">
-      <h3>Tools</h3>
-      <div class="skill-badges">
-        <span class="skill-badge primary">Git</span>
-        <span class="skill-badge">Postman</span>
-        <span class="skill-badge">IntelliJ IDEA</span>
-        <span class="skill-badge">VS Code</span>
-      </div>
-    </div>
+  <footer>
+    © 2026 Hirak Mondal
+  </footer>
 
-  </div>
-</section>
-
-<section class="reveal">
-  <h2>Experience</h2>
-
-  <!-- PayU - Software Engineer -->
-  <div class="card">
-    <h3>Software Engineer — PayU Payments Pvt. Ltd.</h3>
-    <span>Bengaluru, India | Apr 2025 – Present</span>
-    <ul>
-      <li>
-        Owned end-to-end design and delivery of <strong>Open Loop Wallet (OLW)</strong> and
-        <strong>Closed Loop Wallet (CLW)</strong> payment flows across
-        <strong>3+ platforms</strong> in a <strong>microservices-based architecture</strong>,
-        collaborating with <strong>iOS, Android, and Web</strong> teams and
-        <strong>multiple banking partners</strong> using <strong>Java</strong> and <strong>PHP</strong>.
-      </li>
-      <li>
-        Engineered a reusable <strong>AES–RSA hybrid encryption framework</strong> with
-        <strong>Base64 encoding</strong>, securing sensitive payloads
-        <strong>in transit and at rest</strong> across <strong>10+ internal services</strong>.
-      </li>
-      <li>
-        Automated secure bank data ingestion pipelines using <strong>Python</strong>,
-        processing <strong>password-protected ZIPs</strong> and
-        <strong>cell-level encrypted Excel/CSV</strong> files, improving efficiency by
-        <strong>60%</strong>.
-      </li>
-      <li>
-        Built <strong>Grafana-based observability dashboards</strong> for
-        <strong>10+ microservices</strong>, monitoring API throughput, CPU, and memory,
-        reducing incident detection and response time by <strong>40%</strong>.
-      </li>
-    </ul>
-  </div>
-
-  <!-- PayU - Associate Software Engineer -->
-  <div class="card">
-    <h3>Associate Software Engineer — PayU Payments Pvt. Ltd.</h3>
-    <span>Jul 2023 – Apr 2025</span>
-    <ul>
-      <li>
-        Enhanced an <strong>org-wide distributed logging pipeline</strong>
-        (<strong>Fluent Bit → Kafka → FluentD → S3 → OpenSearch</strong>),
-        reducing infrastructure and operational costs by <strong>80–90%</strong>.
-      </li>
-      <li>
-        Optimized archived log indexing and retrieval from <strong>Amazon S3</strong>,
-        improving search efficiency by <strong>60–70%</strong>.
-      </li>
-      <li>
-        Migrated legacy <strong>cron-based workflows</strong> to
-        <strong>Dolphin Scheduler</strong>, extending <strong>RBAC</strong> with a custom
-        <strong>“Maintainer”</strong> role.
-      </li>
-      <li>
-        Customized <strong>Dolphin Scheduler UI</strong> and integrated
-        <strong>Hub-based authentication</strong>, improving security and UX.
-      </li>
-      <li>
-        Improved code quality by increasing <strong>SonarQube coverage to 90%+</strong>,
-        achieving an <strong>A+ security rating</strong>.
-      </li>
-    </ul>
-  </div>
-
-  <!-- PayU - Intern -->
-  <div class="card">
-    <h3>Software Engineer Intern — PayU Payments Pvt. Ltd.</h3>
-    <span>Jan 2023 – Jun 2023</span>
-    <ul>
-      <li>
-        Modernized the org-wide logging pipeline by migrating from
-        <strong>Logstash</strong> to
-        <strong>Fluent Bit → FluentD → Kafka</strong>, reducing resource usage and
-        improving ingestion performance.
-      </li>
-      <li>
-        Contributed to a <strong>scalable</strong> and <strong>cost-efficient</strong>
-        centralized logging system supporting multiple production services.
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="reveal">
-  <h2>Projects</h2>
-  <div class="card">Image Processing WebApp — Python, OpenCV</div>
-  <div class="card">Metal Corrosion Detection — CNN, TensorFlow</div>
-</section>
-
-<section class="reveal">
-  <h2>Achievements</h2>
-  <p>
-    🏆 ThankU Award for reducing infra cost by 80–90%.
-    <br />
-    <a href="https://drive.google.com/file/d/1eY6ZYaaWiWhE-c5efUglSNZBHEjruRgi/view"
-       target="_blank">
-      View Certificate
-    </a>
-  </p>
-</section>
-
-<footer>
-  <p>© 2026 Hirak Mondal</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
