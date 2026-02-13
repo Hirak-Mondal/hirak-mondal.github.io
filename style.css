@@ -90,21 +90,18 @@ body {
 
 .resume-btn {
   display: inline-block;
-  margin-top: 1.4rem;
-  padding: 14px 28px;           /* bigger than normal buttons */
-  background: var(--accent);
+  padding: 0.85rem 1.8rem;
+  background-color: var(--accent);
   color: #fff;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px; /* less pill-like */
   text-decoration: none;
-  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .resume-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* SECTIONS */
