@@ -67,21 +67,43 @@ body {
 }
 
 .hero-links a {
-  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 12px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.hero-links a:hover {
+  opacity: 0.8;
+}
+
+.hero-links svg {
+  width: 16px;
+  height: 16px;
+  opacity: 0.9;
 }
 
 .resume-btn {
   display: inline-block;
-  margin-top: 1.2rem;
-  padding: 11px 20px;
+  margin-top: 1.4rem;
+  padding: 14px 28px;           /* bigger than normal buttons */
   background: var(--accent);
   color: #fff;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none;
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.45);
 }
 
 /* SECTIONS */
