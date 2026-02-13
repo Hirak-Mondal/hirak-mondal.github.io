@@ -49,21 +49,34 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 4.5rem 1rem 3.5rem;
+  padding: 6rem 1rem 4rem;
+  background: radial-gradient(
+  circle at 50% -20%,
+  rgba(56, 189, 248, 0.08),
+  transparent 60%
+);
 }
 
 .hero h1 {
-  font-size: 3rem;
-  letter-spacing: -0.5px;
+  font-size: clamp(2.4rem, 5vw, 3rem);
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .subtitle {
   color: var(--muted);
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .hero-links {
-  margin: 1.2rem 0;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .hero-links a {
@@ -74,15 +87,16 @@ body {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
+  opacity: 0.9;                
   transition: opacity 0.2s ease;
 }
 
 .hero-links a:hover {
-  opacity: 0.8;
+  opacity: 1;                   
 }
 
 .hero-links svg {
-  width: 18px;          /* slightly larger, better balance */
+  width: 18px;          
   height: 18px;
   opacity: 0.9;
   vertical-align: middle;
@@ -101,7 +115,7 @@ body {
 
 .resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 /* SECTIONS */
